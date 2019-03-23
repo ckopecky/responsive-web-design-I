@@ -1,3 +1,63 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bangers'
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.container .main-content .middle-img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+    .container header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container header img {
+        width: 50%;
+        display: flex;
+        align-self: center;
+        margin: 20px auto;
+    }
+
+    .container header nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+
+    .container header nav a {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: gray;
+        text-decoration: none;
+
+    }
+
+    .container header nav a:nth-child(2), a:nth-child(3), a:nth-child(4), a:nth-child(5), a:nth-child(6){
+        border-top: 1px solid gray;
+    }
+
+    
+}
 
