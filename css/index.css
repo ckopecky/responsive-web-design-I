@@ -15,7 +15,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container .main-content .middle-img {
+    width: calc(100% - 30px);
+    margin: 0px 15px;
+}
+
+.container footer {
     width: 100%;
+    margin-top: 30px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -32,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 50%;
         display: flex;
         align-self: center;
-        margin: 20px auto;
+        margin: 20px 15px;
     }
 
     .container header nav {
@@ -58,6 +65,53 @@ h1, h2, h3, h4, h5, h6 {
         border-top: 1px solid gray;
     }
 
-    
+    .container .cta {
+        display: flex;
+        padding-bottom: 50px;
+        border-bottom: 1px solid black;
+    }
+
+    .container .cta .code-snippet {
+        display: none;
+    }
+
+    .container .cta .cta-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .container .cta .cta-text button {
+        width: 50%;
+        height: 40px;
+        font-size: 1.0rem;
+        background-color: transparent;
+        border: 1px solid black;
+    }
+
+    .container .cta .cta-text button:hover {
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    .text-content {
+        margin: 0px 15px;
+        line-height: 1.5;
+    }
+
+    .container .main-content .bottom-content:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .container .contact {
+        margin: 20px 15px;
+    }
+
 }
 
