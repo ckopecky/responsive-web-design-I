@@ -1,5 +1,7 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -12,11 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     max-width: 1000px;
     width: 100%;
-}
-
-.container .main-content .middle-img {
-    width: calc(100% - 30px);
-    margin: 0px 15px;
+    margin: 0px;
 }
 
 .container footer {
@@ -27,18 +25,99 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 800px) {
 
-}
-
-@media only screen and (max-width: 500px) {
     .container header {
         display: flex;
         flex-direction: column-reverse;
     }
 
     .container header img {
-        width: 50%;
+        width: 35%;
         display: flex;
         align-self: center;
+        margin: 40px 0px;
+    }
+
+    .container header nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container header nav a {
+        color: gray;
+        text-decoration: none;
+    }
+
+    .container .cta .code-snippet {
+        display: none;
+    }
+
+    .container .cta .cta-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .container .cta .cta-text button {
+        width: 30%;
+        height: 40px;
+        font-size: 1.0rem;
+        background-color: transparent;
+        border: 1px solid black;
+    }
+
+    .container .cta .cta-text button:hover {
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    .container .main-content .top-content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        margin-top: 60px;
+        border-top: 1px solid black;
+    }
+
+    .container .main-content .top-content .text-content {
+        width: 50%;
+        padding: 0px 15px;
+        margin: 0px;
+    }
+
+    .container .main-content .middle-img {
+        width: 100%;
+    }
+
+    .container .main-content .bottom-content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid black;
+    }
+
+    .container .main-content .bottom-content .text-content {
+        width: 33%;
+        padding: 0px 15px;
+        margin: 0px;
+    }
+
+    .container .contact {
+        margin: 20px 15px;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .container header img {
+        width: 50%;
         margin: 20px 15px;
     }
 
@@ -56,8 +135,6 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: gray;
-        text-decoration: none;
 
     }
 
@@ -71,38 +148,46 @@ h1, h2, h3, h4, h5, h6 {
         border-bottom: 1px solid black;
     }
 
-    .container .cta .code-snippet {
-        display: none;
-    }
-
     .container .cta .cta-text {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 2.2rem;
     }
 
     .container .cta .cta-text button {
         width: 50%;
-        height: 40px;
-        font-size: 1.0rem;
-        background-color: transparent;
-        border: 1px solid black;
     }
 
-    .container .cta .cta-text button:hover {
-        border: 1px solid white;
-        background-color: black;
-        color: white;
-        cursor: pointer;
+    .container .main-content {
+        width: 100%;
     }
 
-    .text-content {
-        margin: 0px 15px;
-        line-height: 1.5;
+    .container .main-content .top-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container .main-content .top-content .text-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px;
+    }
+
+    .container .main-content .middle-img {
+        width: calc(100%-30px);
+    }
+
+    .container .main-content .bottom-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container .main-content .bottom-content .text-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px;
     }
 
     .container .main-content .bottom-content:last-child {
